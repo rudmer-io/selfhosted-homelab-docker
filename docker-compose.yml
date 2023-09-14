@@ -89,3 +89,10 @@ services:
     image: homeassistant/home-assistant
     volumes:
       - ./homeassistant-data:/config
+
+truenas-scale:
+image: truenas/scale 
+volumes:
+- ./truenas-scale-data:/data 
+ports:
+- 445:445 
